@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitanes - Vida por categoría y nivel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liga de Capitanes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Capitanes - Vida máxima</h1>
+  <aside class="sidebar">
+    <h2>Liga de Capitanes</h2>
 
-        <div class="search-box">
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="🔍 Buscar categoría, nivel o vida..."
-            >
-        </div>
+    <nav>
+      <a href="#" class="menu-item active">Capitanes</a>
+      <a href="#" class="menu-item">Niveles</a>
+      <a href="#" class="menu-item">Beneficios</a>
+      <a href="#" class="menu-item">Experiencia</a>
+      <a href="#" class="menu-item">Vida</a>
+      <a href="#" class="menu-item">Suerte</a>
+      <a href="#" class="menu-item">Reputación</a>
+    </nav>
+  </aside>
 
-        <div id="resultsInfo"></div>
+  <main class="content">
 
-        <table id="captainsTable">
-            <thead>
-                <tr>
-                    <th>Categoría</th>
-                    <th>Nivel</th>
-                    <th>Vida máxima</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Se genera automáticamente -->
-            </tbody>
-        </table>
-    </div>
+    <header class="topbar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Buscar capitán, nivel, vida o reputación..."
+      >
+    </header>
 
-    <script src="data.js"></script>
-    <script src="script.js"></script>
+    <section class="cards" id="cardsContainer">
+      <!-- Aquí irán las tarjetas de capitanes -->
+    </section>
+
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
