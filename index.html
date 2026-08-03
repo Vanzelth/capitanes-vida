@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitanes - Vida por categoría y nivel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Capitanes - Vida máxima</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Buscar categoría, nivel o vida..."
+            >
+        </div>
+
+        <div id="resultsInfo"></div>
+
+        <table id="captainsTable">
+            <thead>
+                <tr>
+                    <th>Categoría</th>
+                    <th>Nivel</th>
+                    <th>Vida máxima</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Se genera automáticamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
